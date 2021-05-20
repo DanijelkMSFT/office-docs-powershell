@@ -3946,7 +3946,10 @@ Accept wildcard characters: False
 ### -RecipientAddressType
 This parameter is available only in the cloud-based service.
 
-{{ Fill RecipientAddressType Description }}
+The RecipientAddressType parameter specifies a condition which sender the transport rule should take into account when evaluating matches or exceptions for senders.
+
+- Original: When RecipientAddressType is set to Original, the rule can evaluate origin forwarder.
+- Resolved: When RecipientAddressType is set to Resolved (which is the default value), the rule can evaluate resolved internal sender an e.g. apply an exception of the transport rule application or check membership of group for this sender.
 
 ```yaml
 Type: RecipientAddressType
